@@ -1,0 +1,21 @@
+@startuml
+title Arquitectura del Módulo de Empleados (ERP)
+
+actor Cliente as C
+
+rectangle "API ASP.NET Core" as API {
+    [EmpleadosController]
+    [ProcesadorEmpleadosService <<thread>>]
+}
+
+database "SQL Server" as DB
+rectangle "Entity Framework Core" as EF
+
+C --> API : Peticiones (CRUD / Carga Masiva)
+API --> EF : Operaciones ORM
+EF --> DB : Consultas SQL / Transacciones
+API --> [ProcesadorEmpleadosService <<thread>>] : Procesos por lotes
+[ProcesadorEmpleadosService <<thread>>] --> EF : Acceso concurrente
+EF --> DB : Inserción masiva
+
+@enduml
