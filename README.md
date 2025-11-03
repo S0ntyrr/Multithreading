@@ -18,14 +18,14 @@ Implementación simple: Código claro y fácil de entender
 Configurable: Número de tareas y tiempos de espera personalizables
 
 📊 Resultados Esperados
-https://via.placeholder.com/600x400/4CAF50/FFFFFF?text=Secuencial+vs+Multithreading
+https://via.placeholder.com/600x400/4CAF50/FFFFFF?text=Secuencial+vs+Multithreading 
 
 Como se puede observar en la gráfica, el multithreading ofrece mejoras significativas en tareas de E/S.
 
 🛠️ Instalación
 bash
 # Clonar el repositorio
-git clone https://github.com/S0ntyrr/Multithreading.git
+git clone https://github.com/S0ntyrr/Multithreading.git 
 
 # Navegar al directorio
 cd Multithreading
@@ -63,7 +63,7 @@ Multithreading/
     └── comparativa-tiempos.png
 🔧 Cómo Funciona
 Ejecución Secuencial
-https://via.placeholder.com/400x200/2196F3/FFFFFF?text=Ejecuci%C3%B3n+Secuencial
+https://via.placeholder.com/400x200/2196F3/FFFFFF?text=Ejecuci%C3%B3n+Secuencial 
 
 python
 def ejecucion_secuencial(tareas):
@@ -72,7 +72,7 @@ def ejecucion_secuencial(tareas):
         simular_descarga(tarea)
     return time.time() - inicio
 Ejecución con Hilos
-https://via.placeholder.com/400x200/FF9800/FFFFFF?text=Ejecuci%C3%B3n+con+Hilos
+https://via.placeholder.com/400x200/FF9800/FFFFFF?text=Ejecuci%C3%B3n+con+Hilos 
 
 python
 def ejecucion_con_hilos(tareas):
