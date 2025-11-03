@@ -1,31 +1,31 @@
-Multithreading en Python
-Este proyecto demuestra el uso de multithreading en Python para mejorar el rendimiento en tareas que involucran operaciones de E/S (entrada/salida) intensivas.
+# Multithreading en Python
 
-📋 Descripción
+Este proyecto demuestra el uso de **multithreading** en Python para mejorar el rendimiento en tareas que involucran operaciones de E/S (entrada/salida) intensivas.
+
+## 📋 Descripción
+
 El proyecto compara el tiempo de ejecución entre:
+- **Ejecución secuencial**: Procesa tareas una por una
+- **Ejecución con hilos**: Procesa múltiples tareas simultáneamente usando threads
 
-Ejecución secuencial: Procesa tareas una por una
+## 🚀 Características
 
-Ejecución con hilos: Procesa múltiples tareas simultáneamente usando threads
+- **Simulación de tareas de E/S**: Descargas de archivos y procesamiento de datos
+- **Comparativa de rendimiento**: Mide y compara tiempos de ejecución
+- **Implementación simple**: Código claro y fácil de entender
+- **Configurable**: Número de tareas y tiempos de espera personalizables
 
-🚀 Características
-Simulación de tareas de E/S: Descargas de archivos y procesamiento de datos
+## 📊 Resultados Esperados
 
-Comparativa de rendimiento: Mide y compara tiempos de ejecución
-
-Implementación simple: Código claro y fácil de entender
-
-Configurable: Número de tareas y tiempos de espera personalizables
-
-📊 Resultados Esperados
-https://via.placeholder.com/600x400/4CAF50/FFFFFF?text=Secuencial+vs+Multithreading 
+![Comparación de Tiempos](assets/comparativa-tiempos.png)
 
 Como se puede observar en la gráfica, el multithreading ofrece mejoras significativas en tareas de E/S.
 
-🛠️ Instalación
-bash
+## 🛠️ Instalación
+
+```bash
 # Clonar el repositorio
-git clone https://github.com/S0ntyrr/Multithreading.git 
+git clone https://github.com/S0ntyrr/Multithreading.git
 
 # Navegar al directorio
 cd Multithreading
@@ -60,10 +60,12 @@ Multithreading/
 ├── README.md                # Este archivo
 └── assets/                  # Imágenes y recursos
     ├── diagrama-flujo.png
-    └── comparativa-tiempos.png
+    ├── comparativa-tiempos.png
+    ├── ejecucion-secuencial.png
+    └── ejecucion-hilos.png
 🔧 Cómo Funciona
 Ejecución Secuencial
-https://via.placeholder.com/400x200/2196F3/FFFFFF?text=Ejecuci%C3%B3n+Secuencial 
+https://assets/ejecucion-secuencial.png
 
 python
 def ejecucion_secuencial(tareas):
@@ -72,7 +74,7 @@ def ejecucion_secuencial(tareas):
         simular_descarga(tarea)
     return time.time() - inicio
 Ejecución con Hilos
-https://via.placeholder.com/400x200/FF9800/FFFFFF?text=Ejecuci%C3%B3n+con+Hilos 
+https://assets/ejecucion-hilos.png
 
 python
 def ejecucion_con_hilos(tareas):
@@ -107,7 +109,7 @@ Complejidad: Mayor complejidad en el debugging y sincronización
 
 ✅ Servidores web
 
-✅ scraping web
+✅ Scraping web
 
 🤝 Contribuciones
 ¡Las contribuciones son bienvenidas! Por favor:
@@ -128,4 +130,3 @@ Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más deta
 👨‍💻 Autor
 S0ntyrr - GitHub
 
-⭐ ¡Si te gusta este proyecto, dale una estrella en GitHub!
